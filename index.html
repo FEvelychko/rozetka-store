@@ -16,12 +16,18 @@
 
                 Search: <input ng-model="query">
 
+                Sort by:
+                <select ng-model="orderAge">
+                    <option value="name">Alphabetical</option>
+                    <option value="age">Newest</option>
+                </select>
+
             </div>
             <div class="col-md-10">
                 <!--Body content-->
 
                 <ul class = "cars">
-                    <li ng-repeat="car in cars | filter:query">
+                    <li ng-repeat="car in cars | filter:query | orderBy:orderAge">
                         <span>{{car.name}}</span>
                         <p>{{car.description}}</p>
                     </li>
