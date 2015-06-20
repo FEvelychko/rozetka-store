@@ -1,2 +1,51 @@
-
-    TBD: detail view for <span>{{carId}}</span>
+    <img ng-src="{{car.images[0]}}" class="car">
+    <h1>{{car.name}}</h1>
+    <p>{{car.description}}</p>
+    <ul class="car-thumbs">
+        <li ng-repeat="img in car.images">
+            <img ng-src="{{img}}">
+        </li>
+    </ul>
+    <ul class="specs">
+        <li>
+            <span>Gas Mileage</span>
+            <dl>
+                <dt>Mileage</dt>
+                <dd ng-repeat="mileage in car.mileage">{{mileage}}</dd>
+            </dl>
+        </li>
+          <li>
+            <span>Size and Weight</span>
+            <dl>
+              <dt>Dimensions</dt>
+              <dd ng-repeat="dim in car.sizeAndWeight.dimensions">{{dim}}</dd>
+              <dt>Weight</dt>
+              <dd>{{car.sizeAndWeight.weight}}</dd>
+            </dl>
+          </li>
+        <li>
+            <span>Transmission</span>
+            <dd>{{car.transmission}}</dd>
+        </li>
+        <li>
+            <span>Passenger capacity</span>
+            <dd>{{car.passengerCapacity}}</dd>
+        </li>
+        <li>
+            <span>Fuel Tank</span>
+            <dd>{{car.fuelTank}}</dd>
+        </li>
+        <li>
+            <span>Mileage</span>
+            <dt>EPA Fuel Economy Est - Hwy (MPG)</dt>
+            <dd>{{car.mileageMain[0]}}</dd>
+            <dt>Fuel Economy Est-Combined (MPG)</dt>
+            <dd>{{car.mileageMain[1]}}</dd>
+            <dt>EPA Fuel Economy Est - City (MPG)</dt>
+            <dd>{{car.mileageMain[2]}}</dd>
+        </li>
+        <li>
+            <span>Additional Features</span>
+            <dd>{{car.additionalFeatures}}</dd>
+        </li>
+    </ul>

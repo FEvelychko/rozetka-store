@@ -13,9 +13,11 @@
 
         }]);
 
-    rozetkaControllers.controller('CarDetailCtrl', ['$scope', '$routeParams',
-        function($scope, $routeParams) {
-            $scope.carId = $routeParams.carId;
+    rozetkaControllers.controller('CarDetailCtrl', ['$scope', '$routeParams', '$http',
+            function($scope, $routeParams, $http) {
+                $http.get('carsData/' + $routeParams.carId + '.json').success(function(data) {
+                    $scope.car = data;
+                });
         }]);
 
 
