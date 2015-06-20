@@ -1,0 +1,37 @@
+  [
+    {
+      "age": 0,
+      "id": "acura-ilx",
+      "imageUrl": "img/0(min).jpg",
+      "name": "2016 Acura ILX\u2122",
+      "snippet": "The 2016 Acura ILX has a sportier focus than other entry-luxury sedans, without sacrificing comfort and refinement."
+    },
+    {
+      "age": 1,
+      "id": "alfa-romeo-4c",
+      "imageUrl": "img/1(min).jpg",
+      "name": "2015 Alfa Romeo 4C\u2122",
+      "snippet": "The 2015 Alfa Romeo 4C is a dazzling sports-car reincarnation of a heady past, and a future classic in its own right."
+    },
+    {
+      "age": 2,
+      "id": "aston-martin-db9",
+      "imageUrl": "img/2(min).jpg",
+      "name": "2014 Aston Martin DB9\u2122 4G",
+      "snippet": "The 2015 Aston Martin DB9 is coming soon. You can sign up to receive email updates any time we learn anything new on the Aston Martin DB9."
+    },
+    {
+      "age": 0,
+      "id": "audi-a3",
+      "imageUrl": "img/3(min).jpg",
+      "name": "2016 Audi A3\u2122",
+      "snippet": "The 2016 Audi A3 models offer a variety of body styles, powertrains, and options to battle whatever the small luxury segment has to offer."
+    },
+    {
+      "age": 0,
+      "id": "bentley-mulsanne",
+      "imageUrl": "img/4(min).jpg",
+      "name": "2016 Bentley Mulsanne\u2122",
+      "snippet": "The 2016 Bentley Mulsanne is a heroically impressive hyper-luxury limousine--particularly in Speed trim.."
+    }
+  ]
