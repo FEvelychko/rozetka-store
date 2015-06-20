@@ -2,13 +2,22 @@
  * Created by Maksym on 6/20/2015.
  */
 
-    var rozetkaStore = angular.module('rozetkaStore', []);
+    var rozetkaControllers = angular.module('rozetkaControllers', []);
 
-    rozetkaStore.controller('CarListCtrl', function ($scope, $http) {
+    rozetkaControllers.controller('CarListCtrl', ['$scope', '$http',
+        function($scope, $http) {
         $http.get('carsData/cars.json').success(function(data) {
             $scope.cars = data;
         });
         $scope.orderProp = 'age';
+
+        }]);
+
+    rozetkaControllers.controller('CarDetailCtrl', ['$scope', '$routeParams',
+        function($scope, $routeParams) {
+            $scope.carId = $routeParams.carId;
+        }]);
+
 
 
         /*$scope.cars = [
@@ -22,5 +31,3 @@
                 'description': 'The 2015 Aston Martin DB9 is coming soon. You can sign up to receive email updates any time we learn anything new on the Aston Martin DB9.',
                     'age':2}
         ];*/
-
-    });

@@ -1,0 +1,27 @@
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+
+                Search: <input ng-model="query">
+
+                Sort by:
+                <select ng-model="orderAge">
+                    <option value="name">Alphabetical</option>
+                    <option value="age">Newest</option>
+                </select>
+
+            </div>
+            <div class="col-md-10">
+
+                <ul class = "cars">
+                    <li ng-repeat="car in cars | filter:query | orderBy:orderAge" class="thumbnail">
+                        <a href="#/cars/{{car.id}}" class="thumb"><img ng-src="{{car.imageUrl}}"></a>
+                        <a href="#/cars/{{car.id}}">{{car.name}}</a>
+                        <p>{{car.snippet}}</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
