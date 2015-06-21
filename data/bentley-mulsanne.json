@@ -1,0 +1,26 @@
+{
+  "mileage": [
+    "25 mpg City/36 mpg Hwy"
+  ],
+  "id": "dell-streak-7",
+  "images": [
+    "../app/images/bentley-mulsanne/4(min).jpg",
+    "../app/images/bentley-mulsanne/4z(min).jpg",
+    "../app/images/bentley-mulsanne/4zz(min).jpg",
+    "../app/images/bentley-mulsanne/4zzz(min).jpg",
+    "../app/images/bentley-mulsanne/4zzzz(min).jpg"
+  ],
+  "name": "2016 Acura ILX",
+  "sizeAndWeight": {
+    "dimensions": [
+      "59.4",
+      "55.6"
+    ],
+    "weight": "3093"
+  },
+  "transmission":"Transmission: 8-Speed Dual-Clutch -inc: torque converter and Sequential SportShift paddle shifters",
+  "passengerCapacity":5,
+  "fuelTank": 13.2,
+
+  "mileageMain": [26, 29, 25]
+}

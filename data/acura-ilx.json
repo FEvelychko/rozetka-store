@@ -4,11 +4,11 @@
   ],
   "id": "dell-streak-7",
   "images": [
-    "img/0(min).jpg",
-    "img/0z(min).jpg",
-    "img/0zz(min).jpg",
-    "img/0zzz(min).jpg",
-    "img/0zzzz(min).jpg"
+    "../app/images/0(min).jpg",
+    "../app/images/0z(min).jpg",
+    "../app/images/0zz(min).jpg",
+    "../app/images/0zzz(min).jpg",
+    "../app/images/0zzzz(min).jpg"
   ],
   "name": "2016 Acura ILX",
   "sizeAndWeight": {
