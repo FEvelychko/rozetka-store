@@ -12,7 +12,8 @@
             $routeProvider.
                 when('/cars', {
                     templateUrl: 'views/car-list.html',
-                    controller: 'CarListCtrl'
+                    controller: 'CarListCtrl',
+                    directive: 'monKeys'
                 }).
                 when('/cars/:carId', {
                     templateUrl: 'views/car-detail.html',
