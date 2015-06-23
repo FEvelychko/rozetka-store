@@ -7,7 +7,7 @@
     rozetkaApp.directive('monKeys', function() {
                 return {
                     restrict: 'E',
-                    templateUrl: 'views/monkeys.html',
+                    templateUrl: '../../views/monkeys.html',
                     replace: false,
                     scope: {},
                     link: function (scope, element) {

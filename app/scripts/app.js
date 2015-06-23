@@ -11,12 +11,12 @@
         function($routeProvider) {
             $routeProvider.
                 when('/cars', {
-                    templateUrl: 'views/car-list.html',
+                    templateUrl: '../views/car-list.html',
                     controller: 'CarListCtrl',
                     directive: 'monKeys'
                 }).
                 when('/cars/:carId', {
-                    templateUrl: 'views/car-detail.html',
+                    templateUrl: '../views/car-detail.html',
                     controller: 'CarDetailCtrl'
                 }).
                 otherwise({
